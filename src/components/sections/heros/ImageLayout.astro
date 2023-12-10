@@ -3,6 +3,7 @@ import { Icon } from 'astro-icon';
 import { Container, Button } from '@littlesticks/odyssey-theme-components';
 import settings from '../../../config/settings.js';
 import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
+import "../../../styles/index.css";
 ---
 <hr class="my-4 border-t-2 border-black w-full">
 <Container>
@@ -10,7 +11,7 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
     <div class="hero-section__image">
       <picture>
         <img
-          src="assets/images/home/iphoneloop0.webp"
+          src="assets/images/home/esim-hero-cropped.png"
           alt="Astro Odyssey"
           id="home-hero-image"
         />
@@ -19,21 +20,15 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
     <div class="hero-section__image">
       <section class="py-16 sm:py-20">
         <h1 class="text-3xl font-medium tracking-tight sm:text-4xl lg:text-5xl font-lora">
-          Manage security risks and improve employee privacy.
+          Two phones, one device.
         </h1>
-        <p>Verbind offers devices with encrypted “work profiles:”
-          <li>Corporate data stays safe, even if the personal profile suffers a breach.</li>
-          <li>Protect employee privacy.</li>
-          <li>Personal profile with private apps, data, and browsing history.</li>
-          <li>Wipe the work profile without affecting the personal one.</li>
-          <li>Enable targeted incident response measures.</li>
+        <p>No need to carry a second phone. Verbind device profiles let employees work on the mobile they’re already familiar with. Turn an existing personal device into a mobile workspace. Employees can toggle device-wide settings to disable work notifications outside working hours, protecting work-life balance
         </p>
         <!-- <hr class="my-4 border-t-2 border-black w-full"> -->
       </section>
     </div>
   </section>
 </Container>
-<!-- Add margin between containers -->
 <hr class="my-4 border-t-2 border-black w-full">
 <Container>
   <section class="hero-section__section">
@@ -59,14 +54,13 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
     </div>
   </section>
 </Container>
-<!-- Add margin between containers -->
 <hr class="my-4 border-t-2 border-black w-full">
 <Container>
   <section class="hero-section__section">
     <div class="hero-section__image">
-      <picture>
         <img
-          src="assets/images/home/esim-hero-cropped.png"
+          class="bigger-image"
+          src="assets/images/home/iphoneloop0.webp"
           alt="Astro Odyssey"
           id="home-hero-image"
         />
@@ -75,15 +69,24 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
     <div class="hero-section__image">
       <section class="py-16 sm:py-20">
         <h1 class="text-3xl font-medium tracking-tight sm:text-4xl lg:text-5xl font-lora">
-          Two profiles, one device.
+          Manage security risks and improve employee privacy.
         </h1>
-        <p>No need to carry a second phone. Verbind device profiles let employees work on the mobile they’re already familiar with. Turn an existing personal device into a mobile workspace. Employees can toggle device-wide settings to disable work notifications outside working hours, protecting work-life balance
+        <p>Verbind offers devices with encrypted “work profiles:”
+          <li>Corporate data stays safe, even if the personal profile suffers a breach.</li>
+          <li>Protect employee privacy.</li>
+          <li>Personal profile with private apps, data, and browsing history.</li>
+          <li>Wipe the work profile without affecting the personal one.</li>
+          <li>Enable targeted incident response measures.</li>
         </p>
         <!-- <hr class="my-4 border-t-2 border-black w-full"> -->
       </section>
     </div>
   </section>
 </Container>
+<!-- Add margin between containers -->
+
+<!-- Add margin between containers -->
+
 <!-- Add margin between containers -->
 <hr class="my-4 border-t-2 border-black w-full">
 <Container>
@@ -102,7 +105,7 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
     <div class="hero-section__image">
       <picture>
         <img
-          src="assets/images/home/"
+          src="assets/images/home/dashicon.svg"
           alt="Astro Odyssey"
           id="home-hero-image"
         />
@@ -115,13 +118,15 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 <Container>
   <section class="hero-section__section">
     <div class="hero-section__image">
-      <picture>
-        <img
-          src="assets/images/home/benefits-image.png"
-          alt="Astro Odyssey"
-          id="home-hero-image"
-        />
-      </picture>
+      <div class="block">
+        <picture>
+          <img
+            src="assets/images/home/dashicon.svg"
+            alt="Astro Odyssey"
+            id="home-hero-image"
+          />
+        </picture>
+      </div>
     </div>
     <div class="hero-section__image">
       <section class="py-16 sm:py-20">
@@ -139,41 +144,3 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
     </div>
   </section>
 </Container>
-
-<style>
-  .hero-section__section {
-    margin: 10rem auto;
-    min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 4rem;
-  }
-  .hero-section__text {
-    justify-self: center;
-    max-width: 25rem;
-  }
-  .hero-btns__container {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  .hero-btns__container {
-    margin-right: 1rem;
-  }
-  .hero-section__image {
-    display: flex;
-  }
-  .hero-section__image img {
-    width: 100%;
-    height: 100%;
-    max-height: 80vh;
-    object-fit: cover;
-    border-radius: var(--theme-shape-radius);
-  }
-  @media (max-width: 768px) {
-    .hero-section__section {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
