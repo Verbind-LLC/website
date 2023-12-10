@@ -28,6 +28,11 @@ header {
 
 .hero-section__section {
   margin: 10rem auto;
+
+  @media (max-width: 768px) {
+    margin: 5rem auto;
+  }
+  
   min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
   display: grid;
   grid-template-columns: 1fr 1fr;
