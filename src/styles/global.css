@@ -19,3 +19,9 @@ pre {
 pre .language-id {
   display: none;
 }
+
+header {
+    margin: 0 auto;
+    max-width: var(--container-max-width);
+    padding: var(--container-padding);
+}
