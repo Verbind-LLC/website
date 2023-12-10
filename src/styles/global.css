@@ -62,6 +62,10 @@ header {
   border-radius: var(--theme-shape-radius);
 }
 
+.bigger-image {
+  max-height: 800px !important;
+}
+
 @media (max-width: 768px) {
   .hero-section__section {
     grid-template-columns: 1fr;
